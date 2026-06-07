@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        HTML FORM
+    </h1>
+    <form>
+
+        <div><label for="university">Select your university: </label>
+            <input list="University" type = "text">
+            <datalist id="University">
+                <option value="DTU">
+                <option value="NSIT">
+                <option value="IGDTUW">
+                <option value="JMI">
+                <option value="IPU">
+                
+            </datalist>
+        </div>
+        <div>
+            <label for="skill">Select your skill: </label>
+            
+            <input type="checkbox" value="HTML">HTML
+            <input type="checkbox" value="CSS">CSS
+            <input type="checkbox" value="JavaScript">JavaScript
+            <input type="checkbox" value="Python">Python
+            <input type="checkbox" value="Java">Java
+            <input type="checkbox" value="C++">C++
+            <input type="checkbox" value="React">React
+            <input type="checkbox" value="NodeJs">NodeJs
+            <br><br>
+            <select  name="skill level" placeholder="Select your skill level">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <br><br>
+
+        </div>
+        <div>
+           
+            <label for="About">About Myself: </label>
+            <br>
+             <textarea  id="About" placeholder="Write about yourself" rows="4" cols="50" value="About">
+             </textarea>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Education Details</legend>
+                <label for="">Enter University Name:</label> 
+                <input type="text" placeholder="Enter University Name"/><br><br> 
+                    <label for="">Enter Course Name:</label>
+                    <input type="text" placeholder="Enter Course Name"/><br><br>
+                    <label for="">Enter Year of Graduation:</label>
+                    <input type="number" placeholder="Enter Year of Graduation" min="1900" max="2100"/> 
+                    <label for="">Enter CGPA:</label>
+                    <input type="number" placeholder="Enter CGPA" min="0" max="10" step="0.01" disabled/>
+
+            </fieldset>
+        </div>
+        <br><br>
+       <div>
+         <label for="email">Email: </label>
+        <input  id="email" type="email" placeholder="Enter your email" required/>
+       </div>
+       <br>
+       <div>
+        <label for="number">Age: </label>
+        <input  id="number" type="number" placeholder="Enter your age" min="0" max="100"/>
+
+       </div>
+       <br>
+       <div>
+       <label for="password">Password: </label>
+       <input  id="password" type="password" placeholder="Enter your password" minlength="8" maxlength="20" required/>
+         
+         </div>
+         <br>
+         <div>
+            <label for="date">Date: </label>
+            <input  id="date" type="date"/>
+         </div>
+         <br>
+         <div>
+            <label for="file">Choose File: </label>
+            <input  id="file" type="file"/>
+         </div>
+            <br>
+            <input type="checkbox" id="checkbox" name="checkbox"/>
+            <label for="checkbox">I agree to the terms and conditions</label>
+            <br>
+            <input type="range" id="range" name="range" min="0" max="100"/>
+            <br>
+            <input type="color" id="color" name="color"/>
+            <br>
+            <input type="radio" id="male" name="gender" value="male"/>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female"/>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other"/>
+            <label for="other">Other</label>
+            <input type="reset" value="Reset"/>
+            
+
+         <button type="submit" value="signup">signup</button>
+    </form> 
+     
+</body>
+</html>   
